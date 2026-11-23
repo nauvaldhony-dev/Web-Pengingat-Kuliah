@@ -5,6 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pengingat Kuliah</title>
+
+    <!-- Deskripsi singkat untuk mesin pencari / preview tautan -->
+    <meta name="description" content="Aplikasi pengingat jadwal kuliah dengan notifikasi otomatis.">
+
+    <!-- Warna bar browser di Android (theme-color) -->
+    <meta name="theme-color" content="#2563eb">
+
+    <!-- Favicon: ikon kecil di tab browser -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Manifest PWA disuntik oleh script.js HANYA saat dibuka lewat
+         http/https. Kalau di file:// browser akan menolak (CORS) -->
+    <!-- (link manifest ditambahkan otomatis oleh script.js) -->
+
+    <!-- Ikon untuk iOS bila dipasang ke home screen -->
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="KuliahKu">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,9 +39,15 @@
                 </div>
             </div>
 
-            <button class="notification-btn" id="notificationBtn">
-                🔔 Aktifkan Notifikasi
-            </button>
+            <div class="header-actions">
+                <button class="test-btn" id="testNotifBtn" title="Kirim notifikasi percobaan sekarang">
+                    🧪 Coba Notifikasi
+                </button>
+
+                <button class="notification-btn" id="notificationBtn">
+                    🔔 Aktifkan Notifikasi
+                </button>
+            </div>
         </header>
 
         <section class="welcome">
@@ -120,6 +145,13 @@
 
                     <label for="time">Jam Mulai</label>
                     <input type="time" id="time" required>
+
+                    <label for="note">Catatan <span class="label-optional">(opsional)</span></label>
+                    <textarea
+                        id="note"
+                        rows="2"
+                        placeholder="Contoh: bawa laptop, ada kuis"
+                    ></textarea>
 
 
 <label for="reminderMinutes">Pengingat Sebelum Kuliah</label>

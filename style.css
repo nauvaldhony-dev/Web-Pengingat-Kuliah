@@ -248,6 +248,88 @@ body {
     margin-top: 10px;
 }
 
+/* CATATAN DI KARTU JADWAL */
+
+.schedule-note {
+    color: #78350f;
+    background: #fffbeb;
+    border-left: 3px solid #fbbf24;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-top: 9px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* BARIS STATUS PENGINGAT (hitung mundur) */
+
+.reminder-status {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 11px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #f1f5f9;
+    color: #475569;
+    line-height: 1.5;
+}
+
+/* HEADER ACTION BUTTONS */
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex-wrap: wrap;
+}
+
+.test-btn {
+    background: #f1f5f9;
+    border: 1px solid #dbe3ef;
+    padding: 12px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    color: #475569;
+    white-space: nowrap;
+}
+
+.test-btn:hover {
+    background: #e2e8f0;
+    border-color: #cbd5e1;
+}
+
+/* TEXTAREA CATATAN */
+
+.form-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dbe3ef;
+    border-radius: 9px;
+    outline: none;
+    font-size: 13px;
+    font-family: inherit;
+    background: white;
+    color: #1e293b;
+    resize: vertical;
+    min-height: 54px;
+}
+
+.form-section textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px #dbeafe;
+}
+
+.label-optional {
+    font-weight: 400;
+    color: #94a3b8;
+    font-size: 11px;
+}
+
 .action-buttons {
     display: flex;
     gap: 8px;
@@ -363,6 +445,54 @@ footer {
     color: #94a3b8;
     font-size: 12px;
     margin-top: 35px;
+}
+
+/* BANNER PERINGATAN file:// */
+
+.file-warning {
+    background: #fff7ed;
+    border: 1px solid #fdba74;
+    border-left: 5px solid #f97316;
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 22px;
+    color: #7c2d12;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.file-warning strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #9a3412;
+}
+
+.file-warning p {
+    margin: 0;
+    color: #7c2d12;
+}
+
+.file-warning code {
+    background: #ffedd5;
+    border: 1px solid #fdba74;
+    border-radius: 5px;
+    padding: 2px 6px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 12px;
+    color: #9a3412;
+    white-space: nowrap;
+}
+
+/* TOMBOL NOTIFIKASI SAAT NONAKTIF */
+
+.notification-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.75;
+}
+
+.notification-btn:disabled:hover {
+    background: white;
 }
 
 /* RESPONSIVE */
